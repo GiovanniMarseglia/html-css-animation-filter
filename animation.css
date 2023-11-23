@@ -1,0 +1,258 @@
+.ex-1-square:hover{
+    transition: 5s;
+    background-color: red;
+}
+
+.ex-2-square:active{
+    transition: 5s;
+    width: 200px;
+    height: 200px;
+}
+
+.ex-3-square:hover{
+    transition: 5s;
+    border-radius: 100%;
+}
+
+.ex-4-square:hover{
+    transition: 5s;
+    opacity: 0;
+}
+
+
+.ex-5-square:hover{
+    transition: 5s;
+    width: 150px;
+    height: 150px;
+}
+.ex-5-square:active{
+    transition: 5s;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+
+@keyframes onHoverAnimation {
+    0% {
+        filter: grayscale(0%) sepia(0%); 
+        
+    }
+    50%{
+        filter: grayscale(50%) sepia(30%);
+    }
+    100% {
+        filter: grayscale(100%) sepia(60%);
+    }
+}
+
+
+.ex-7-img:hover{
+    animation-name: onHoverAnimation;
+    animation-duration: 5s;
+}
+
+.ex-8-img:hover{
+    animation-name: onHoverAnimation;
+    animation-duration: 5s;
+    transition: 5s;
+    border-radius: 15%;
+}
+
+.ex-9-img:hover{
+    animation-name: onHoverAnimation;
+    animation-duration: 5s;
+    transition: 5s;
+    border-radius: 15%;
+    scale: 60%;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    
+}
+
+.ex-10-icon{
+    
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+/* da controllare */
+
+
+@keyframes rotation34 {
+    0% {
+        transform: rotate(0deg);
+      }
+
+    50%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+
+.ex-11-icon:hover{
+    animation-name: rotation34;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(1,-0.04,.99,.41); 
+}
+
+
+
+
+
+
+@keyframes move{
+    0% {
+        transform: translateX(0px);
+    }
+
+   100% {
+    transform: translateX(90px);
+}
+    
+}
+
+
+.ex-12-top-white{
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+
+@keyframes move1{
+    0% {
+        transform: translateX(0px);
+    }
+
+   100% {
+    transform: translateX(-90px);
+}
+}
+
+
+
+.ex-12-bottom-white{
+    animation-name: move1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+
+
+
+
+
+
+
+
+@keyframes move2{
+    0% {
+        transform: translateX(0px) scale(70%);
+    }
+
+    20%{
+        transform: translatex(145px) scale(70%);
+    }
+
+    30%{
+        transform: translatex(145px) translatey(0px) rotatez(90deg) scale(70%);
+    }
+
+    40% {
+        transform: translatex(145px) translatey(65px) rotatez(90deg)scale(70%);
+    }
+
+    50% {
+        transform: translatex(145px) translatey(65px) rotatez(180deg) scale(70%);
+    }
+    60% {
+        transform: translatex(-50px) translatey(65px) rotatez(180deg) scale(70%);
+    }
+    70% {
+        transform: translatex(-50px) translatey(65px) rotatez(270deg) scale(70%);
+    }
+
+   80% {
+    transform: translatex(-50px) translatey(0px) rotatez(270deg) scale(70%);
+}
+   90% {
+       transform: translatex(-50px) translatey(0px) rotatez(360deg) scale(70%);   
+   }
+99% {
+    transform: translatex(0px) translatey(0px) rotatez(360deg) scale(70%);
+}
+
+100% {
+    transform:rotatez(0deg) scale(70%);
+}
+
+
+
+
+}
+
+
+
+.ex-13-top-white{
+    animation-name: move2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+    
+}
+
+
+@keyframes mov{
+    0% {
+        transform: translate(0px);
+    }
+
+   100% {
+    transform: translate(-90px);
+}
+}
+
+
+
+.ex-13-bottom-white{
+    animation-name: move3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    
+}
