@@ -177,38 +177,41 @@
 
 
 
-
+ 
 @keyframes move2{
     0% {
         transform: translateX(0px) scale(70%);
     }
 
-    20%{
+    11%{
         transform: translatex(145px) scale(70%);
     }
 
-    30%{
-        transform: translatex(145px) translatey(0px) rotatez(90deg) scale(70%);
+
+    22%{
+        transform: translatex(145px) translatey(10px) rotatez(90deg) scale(70%);
     }
 
-    40% {
+
+    33% {
         transform: translatex(145px) translatey(65px) rotatez(90deg)scale(70%);
     }
 
-    50% {
+    44% {
         transform: translatex(145px) translatey(65px) rotatez(180deg) scale(70%);
     }
-    60% {
+
+    55% {
         transform: translatex(-50px) translatey(65px) rotatez(180deg) scale(70%);
     }
-    70% {
+    66% {
         transform: translatex(-50px) translatey(65px) rotatez(270deg) scale(70%);
     }
 
-   80% {
+   77% {
     transform: translatex(-50px) translatey(0px) rotatez(270deg) scale(70%);
 }
-   90% {
+   88% {
        transform: translatex(-50px) translatey(0px) rotatez(360deg) scale(70%);   
    }
 99% {
@@ -218,41 +221,86 @@
 100% {
     transform:rotatez(0deg) scale(70%);
 }
-
-
-
-
-}
+} 
 
 
 
 .ex-13-top-white{
     animation-name: move2;
-    animation-duration: 20s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
    
     
 }
 
 
-@keyframes mov{
+
+
+
+
+
+@keyframes move3{
     0% {
-        transform: translate(0px);
+        transform: translateX(0px) scale(70%);
     }
 
-   100% {
-    transform: translate(-90px);
+    11%{
+        transform: translatex(-125px) scale(70%);
+    }
+
+    22%{
+        transform: translatex(-125px) translatey(-5px) rotatez(90deg) scale(70%);
+    }
+
+    33% {
+        transform: translatex(-125px) translatey(-65px) rotatez(90deg)scale(70%);
+    }
+
+    44% {
+        transform: translatex(-125px) translatey(-65px) rotatez(180deg) scale(70%);
+    }
+
+    55% {
+        transform: translatex(70px) translatey(-65px) rotatez(180deg) scale(70%);
+    }
+
+    66% {
+        transform: translatex(70px) translatey(-65px) rotatez(270deg) scale(70%);
+    }
+
+   77% {
+    transform: translatex(70px) translatey(0px) rotatez(270deg) scale(70%);
+}
+   88% {
+       transform: translatex(70px) translatey(0px) rotatez(360deg) scale(70%);   
+   }
+
+99% {
+    transform: translatex(0px) translatey(0px) rotatez(360deg) scale(70%);
+}
+
+100% {
+    transform:rotatez(0deg) scale(70%);
 }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
 .ex-13-bottom-white{
     animation-name: move3;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
 }
